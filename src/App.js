@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import styles from './App.module.css'
+import Buttoncom from './components/Button';
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className={styles.flex}>
+      <Buttoncom title='Join Us' type='sky' />
+      <Buttoncom title='Settings' type='teal' />
+      <Buttoncom title='Login' type='orange' />
+      <Buttoncom title='Contact Us' type='error' />
+      <Buttoncom title='Search' type='green' />
+      <Buttoncom title='Help' type='purple' />
+      <Buttoncom title='Home' type='pink' />
+      <Buttoncom title='Download' type='golden' />
+
+      </div>
+      
+    </>
   );
 }
 
